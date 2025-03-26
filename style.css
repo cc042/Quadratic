@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Poppins;
+}
+
+label {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.Result {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+input {
+    outline: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.asd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.solver {
+    grid-column: -3/-2;
+}
+
+body {
+    height: 100vh;
+    height: 100dvh;
+    width: 100dvw;
+    width: 100vw;
+    padding: 30px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
