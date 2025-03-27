@@ -6,6 +6,18 @@
     font-family: Poppins;
 }
 
+body {
+    height: 100vh;
+    height: 100dvh;
+    width: 100dvw;
+    width: 100vw;
+    padding: 30px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
 label {
     font-weight: 600;
     font-size: 30px;
@@ -16,7 +28,8 @@ label {
     font-size: 20px;
 }
 
-input {
+input,
+button {
     outline: none;
     font-weight: 600;
     font-size: 20px;
@@ -24,6 +37,18 @@ input {
     border-radius: 10px;
     border: 2px solid;
     width: 100%;
+}
+
+button {
+    width: max-content;
+    height: max-content;
+    padding: 5px 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 form {
@@ -48,14 +73,8 @@ form {
     grid-column: -3/-2;
 }
 
-body {
-    height: 100vh;
-    height: 100dvh;
-    width: 100dvw;
-    width: 100vw;
-    padding: 30px 10px 10px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
+@media screen and (max-width:400px) {
+    form {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

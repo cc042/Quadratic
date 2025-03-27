@@ -36,9 +36,12 @@ class Quadratic {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
+})
+
+document.querySelector("#solve").addEventListener("click",() => {
     const aValue = a.value;
     const bValue = b.value;
     const cValue = c.value;
 
-    const solution = new Quadratic(aValue, bValue, cValue).solveQuadratic()
+    new Quadratic(aValue, bValue, cValue).solveQuadratic()
 })
